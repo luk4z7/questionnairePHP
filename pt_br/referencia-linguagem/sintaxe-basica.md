@@ -1,4 +1,4 @@
-**Sintaxe Básica** - [Tipos]( )
+[home](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/home.md) | **Sintaxe Básica** - [Tipos](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/tipos.md)
 
 
 Sintaxe Básica

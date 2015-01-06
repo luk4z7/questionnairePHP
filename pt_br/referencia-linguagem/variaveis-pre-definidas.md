@@ -1,4 +1,4 @@
-[Referências]( ) - **Variáveis pré-definidas** - [Exceções pré-definidas]( )
+[home](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/home.md) | [Referências](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/referencias.md) - **Variáveis pré-definidas** - [Exceções pré-definidas](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/excecoes-pre-definidas.md)
 
 
 Variáveis pré-definidas

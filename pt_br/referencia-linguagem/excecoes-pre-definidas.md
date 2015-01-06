@@ -1,4 +1,4 @@
-[Variáveis pré-definidas]( ) - **Exceções pré-definidas** - [Interfaces e Classes pré-definidas]( )
+[home](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/home.md) | [Variáveis pré-definidas](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/excecoes-pre-definidas.md) - **Exceções pré-definidas** - [Interfaces e Classes pré-definidas](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/interfaces-classes-pre-definidas.md)
 
 
 Exceções pré-definidas

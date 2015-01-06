@@ -1,4 +1,4 @@
-[Tipos]( ) - **Variáveis** - [Constantes]( )
+[home](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/home.md) | [Tipos](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/tipos.md) - **Variáveis** - [Constantes](https://github.com/luk4z7/questionnairePHP/blob/master/pt_br/referencia-linguagem/constantes.md)
 
 
 Variáveis
