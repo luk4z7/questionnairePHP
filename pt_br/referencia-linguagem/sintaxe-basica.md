@@ -53,13 +53,14 @@ Respostas
 <a name="01">01</a> - **Resposta:** _Tags suportadas pelo PHP nativamente são :_
 
 ```php
+Tags sempre disponíveis
 <?php ?>
-
-Outras tags :
-<? ?>
 <script language=”php”></script>
 
-Tags ativas com a diretiva shot_open_tags no php.ini
+Tags ativas com a diretiva shot_open_tags ou quando o PHP é configurado com a opção --enable-short-tags
+<? ?>
+
+Tags ativas com a diretiva asp_tags no php.ini
 <% %>
 ```
 ***
