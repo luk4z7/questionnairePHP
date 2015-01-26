@@ -1099,8 +1099,8 @@ Respostas
 ---------
 
 <a href="#back0127">voltar a pergunta</a><br/>
-<a name="0127">0127</a> - **Resposta:** _O PHP trata objetos da mesma maneira que referencias ou manipuladores, siginificando que 
-cada variável contém uma referencia a um objeto ao invés de uma cópia de todo o objeto. Em alguns casos_
+<a name="0127">0127</a> - **Resposta:** _O PHP trata objetos da mesma maneira que referências ou manipuladores, significando que 
+cada variável contém uma referência a um objeto ao invés de uma cópia de todo o objeto._
 
 ***
 
