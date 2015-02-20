@@ -39,7 +39,7 @@ as vantagens de não usá-la ?
 ***
 
 
-<a name="back06">06</a> – Quais estilos de cometário o PHP suporta ?
+<a name="back06">06</a> – Quais estilos de comentários o PHP suporta ?
 
 <a href="#06">Resposta</a>
 ***
@@ -60,7 +60,7 @@ __Standard Tags__
     ?>
 
 Tags padrão, são a melhor solução para a portabilidade e compatibilidade com versões anteriores, pois possui a garantia
-de estar disponível e não pode ser desativada alterando o arquivo e configuração do PHP
+de estar disponível e não pode ser desativada alterando o arquivo de configuração do PHP
 
 
 __Echo Tags__
