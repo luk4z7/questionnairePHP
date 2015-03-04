@@ -133,5 +133,5 @@ por isso que não podem ser definidas dentro de funções, laços ou ifs_
 <a href="#back066">voltar a pergunta</a><br/>
 <a name="066">066</a> - **Resposta:** _A partir do PHP 5.6_
 
-**
+***
 
