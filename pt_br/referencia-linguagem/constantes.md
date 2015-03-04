@@ -48,6 +48,17 @@ const constante = "ola mundo"";
 ***
 
 
+<a name="back66">066</a> – A partir de qual versão é possível definir constantes usando expressões escalares como no exemplo abaixo:
+
+```php
+    const DOMAIN = "php.net";
+    const EMAIL = "lucas@" . DOMAIN;
+```
+
+<a href="#066">Resposta</a>
+***
+
+
 
 
 
@@ -117,4 +128,10 @@ por isso que não podem ser definidas dentro de funções, laços ou ifs_
 <a name="065">065</a> - **Resposta:** _Sim, a partir do PHP 5.4_
 
 ***
+
+
+<a href="#back066">voltar a pergunta</a><br/>
+<a name="066">066</a> - **Resposta:** _A partir do PHP 5.6_
+
+**
 

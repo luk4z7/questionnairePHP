@@ -162,6 +162,12 @@ echo 'Bar' . "\n";
 ***
 
 
+<a name="back0113">0113</a> – O que representa a constante `PHP_EOL` ?
+
+<a href="#0113">Resposta</a>
+***
+
+
 
 
 
@@ -386,5 +392,11 @@ especificado por um rótulo seguido por dois pontos e a instrução é dada como
 
 <a href="#back0112">voltar a pergunta</a><br/>
 <a name="0112">0112</a> - **Resposta:** _O operador goto está disponível apartir do PHP 5.3_
+
+***
+
+
+<a href="#back0113">voltar a pergunta</a><br/>
+<a name="0113">0113</a> - **Resposta:** _Representa `end of line` (fim da linha), marcador para seu sistema operacional atual_
 
 ***

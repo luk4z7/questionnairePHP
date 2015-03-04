@@ -518,6 +518,32 @@ print_r($b);
 ***
 
 
+<a name="back97">097</a> – Adicionado a partir do PHP 5.6 operador de potenciação, demonstre dois exemplos onde o retorno venha ser
+o valor `64`
+
+<a href="#097">Resposta</a>
+***
+
+
+<a name="back98">098</a> – Analisando os dois exemplos das expressões abaixo qual será o maior valor `$left` or `$right` ?
+
+```php
+      $left = "ABC";
+      $right = "ABD";
+      echo (int) ($left > $right);
+```
+
+```php
+      $left = 'apple';
+      $right = 'Apple';
+      echo (int) $left > $right;
+```
+
+<a href="#098">Resposta</a>
+***
+
+
+
 Respostas
 ---------
 
@@ -935,6 +961,35 @@ instânciado de uma certa classe_
 mas se tornou obsoleto pelo instanceof_
 
 ***
+
+
+<a href="#back097">voltar a pergunta</a><br/>
+<a name="097">097</a> - **Resposta:**
+
+```php
+
+    $a = 8 ** 2;
+    $b = 4 ** 3;
+
+    var_dump($a);
+    var_dump($b);
+
+```
+
+retorno
+
+    int(64) int(64)
+
+***
+
+
+<a href="#back098">voltar a pergunta</a><br/>
+<a name="098">098</a> - **Resposta:** _No primeiro exemplo o valor será `0` (isto é, `false`), porque a letra `D`
+na variável `$right` é maior do que a letra correspondente `C`, no segundo exemplo será retornado `true`, pois o valor ASCII
+do caracte `a` corresponde a (97) enquanto o caracte `A` corresponde a (95), explicando o resultado do primeiro exemplo_
+
+***
+
 
 
 
