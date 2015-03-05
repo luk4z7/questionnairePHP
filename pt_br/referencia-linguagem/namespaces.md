@@ -287,6 +287,30 @@ echo constant('namespacename\constname'), "\n";
 ***
 
 
+<a name="back0213">0213</a> – No PHP 5.3 e 5.5 não era possível fazer uma importação de função e constantes, veja abaixo como era
+acessado por seu nome completo ou por um `alias`, no PHP 5.6 é possível fazer uma importação de função e constante ? demonstre um exemplo!
+
+```php
+
+    use Unicode\Tools as UT; // alias
+
+    $charset = UT\CHARSET;
+    UT\strlen("string");
+
+    // ou totalmente qualificado
+    $charset = \Unicode\Tools\CHARSET;
+
+    \Unicode\Tools\strlen(
+        "string"
+    );
+
+```
+
+<a href="#0213">Resposta</a>
+***
+
+
+
 
 Respostas
 ---------
@@ -695,5 +719,23 @@ Retorno:
 >     const NULL = 0; // fatal error;
 >     const true = 'stupid'; // also fatal error;
 >     ```
+
+***
+
+
+<a href="#back0213">voltar a pergunta</a><br/>
+<a name="0213">0213</a> - **Resposta:** _Com o PHP 5.6 sim, podemos importar funções e namespaces, para importar funções é usado
+`use function` e para constantes usa-se `use const`_
+
+```php
+
+    use const Unicode\Tools\CHARSET;
+    use function Unicode\Tools\strlen;
+
+    $charset = CHARSET; // acessando agora Unicode\Tools\CHARSET
+    strlen($string);    // acessando agora Unicode\Tools\strlen(),
+                        // e não a funcão global \strlen()
+
+```
 
 ***
