@@ -7,7 +7,7 @@ Sintaxe Básica
 Perguntas
 ---------
 
-<a name="back01">01</a> – Quantos tipos de tipos de tags de abertura e fechamento o PHP suporta, quais são os tipos especiais sendo
+<a name="back01">01</a> – Quantos tipos de tags de abertura e fechamento o PHP suporta, quais são os tipos especiais sendo
 que para usá-los é necessário ativar uma diretiva no arquivo de configuração do php.ini e qual seria essa diretiva ?
 
 <a href="#01">Resposta</a>

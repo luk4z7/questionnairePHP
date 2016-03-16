@@ -23,7 +23,7 @@ Perguntas
 palavra-chave "const" está disponivel a partir de qual versão ?
 
 ```php
-const constante = "ola mundo"";
+const constante = "ola mundo";
 ```
 
 <a href="#062">Resposta</a>

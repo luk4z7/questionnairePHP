@@ -366,7 +366,7 @@ print_r($array);
 <a href="#back057">voltar a pergunta</a><br/>
 <a name="057">057</a> - **Resposta:** _A partir do php 4.2.0 passou a ser definido como off, tornou-se obsoleta desde o 
 PHP 5.3.0 e removida desde o PHP 5.4.0,  register_globals afeta o conjunto de variáveis pré-definidas disponíveis no escopo 
-global, não recomendavel seu uso deixando seu código inseguro com essa diretiva ativada, não por a difetiva ser literalmente 
+global, não recomendavel seu uso deixando seu código inseguro com essa diretiva ativada, não por a diretiva ser literalmente
 insegura mas o uso incorreto dela é que é, quando habilitada, é possivel usar variáveis sem saber ao certo de onde elas vieram, 
 register_globals criará para seus scritps vários tipos de variáveis oriundas de formulários HTML_
 

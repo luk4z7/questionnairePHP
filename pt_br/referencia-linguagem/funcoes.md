@@ -65,7 +65,7 @@ echo iogurtera ("framboesa");
 
 
 <a name="back0119">0119</a> – É verdadeiro a seguinte afirmativa que valores escalares não são passados por referência e 
-objetos são sempre passados por referência e retornados por referência, demostre um exemplo ?
+objetos são sempre passados por referência e retornados por referência, demonstre um exemplo ?
 
 <a href="#0119">Resposta</a>
 ***
@@ -90,7 +90,7 @@ include, require, etc ... ? como podemos acessar esses construtores com funçõe
 ***
 
 
-<a name="back0123">0123</a> – Para usar funções "image" como imagecreatetruecolor() o PHP deve ser compilado com suporte a 
+<a name="back0123">0123</a> – Para usar funções `image` como `imagecreatetruecolor()` o PHP deve ser compilado com suporte a
 qual extensão ?
 
 <a href="#0123">Resposta</a>
@@ -113,6 +113,45 @@ qual extensão ?
 
 <a href="#0126">Resposta</a>
 ***
+
+
+<a name="back0127">0127</a> – PHP 5.6 indroduz um novo recurso chamado de `variadics`, qual sua finalidade ? demonstre um exemplo!
+
+<a href="#0127">Resposta</a>
+***
+
+
+<a name="back0128">0128</a> – `variadics` permite passar valores por referência ?
+
+<a href="#0128">Resposta</a>
+***
+
+
+<a name="back0129">0129</a> – `variadics` permite indução de tipos ?
+
+<a href="#0129">Resposta</a>
+***
+
+
+<a name="back0130">0130</a> – No PHP 5.6 qual a finalidade do operador de `splat` ? qual outro nome ele
+é conhecido ? demonstre algum exemplo de seu uso!
+
+<a href="#0130">Resposta</a>
+***
+
+
+<a name="back0131">0131</a> – Analisando o exemplo abaixo será emitido um `Warning`, qual o motivo de um retorno de `Warning`
+
+```php
+
+    var_dump(1, 2, ...null, ...[3, 4]);
+
+```
+
+<a href="#0131">Resposta</a>
+***
+
+
 
 
 
@@ -243,15 +282,15 @@ echo "\n";
 
 
 <a href="#back0120">voltar a pergunta</a><br/>
-<a name="0120">0120</a> - **Resposta:** _Funções variáveis é um conceito em que um nome de uma variável de uma variável 
-existir parenteses no final, o PHP procurará uma função com o mesmo nome, qualquer que seja a avaliação da variável, e tentará 
+<a name="0120">0120</a> - **Resposta:** _Funções variáveis é um conceito em que um nome de uma variável
+existi parenteses no final, o PHP procurará uma função com o mesmo nome, qualquer que seja a avaliação da variável, e tentará
 executá-la_
 
 ***
 
 
 <a href="#back0121">voltar a pergunta</a><br/>
-<a name="0121">0121</a> - **Resposta:** _Não funcionam, nesse cado pode ser usar uma função de wrapper para user quaisquer um 
+<a name="0121">0121</a> - **Resposta:** _Não funcionam, nesse caso pode ser usar uma função de `wrapper` para usar quaisquer um
 destes construtores com uma função variável_
 
 ```php
@@ -358,3 +397,104 @@ print $my_car->getTotal(0.05) . "\n";
 ```
 
 ***
+
+
+<a href="#back0127">voltar a pergunta</a><br/>
+<a name="0127">0127</a> - **Resposta:** _`variadics` permite que você possa designar explicitamente uma função que aceita uma lista
+de variáveis (argumentos)_
+
+ex:
+
+```php
+
+    function fn($reqParam, $optParam = null, ...$params) {
+        var_dump($reqParam, $optParam, $params);
+    }
+
+    fn(1);             // 1, null, []
+    fn(1, 2);          // 1, 2, []
+    fn(1, 2, 3);       // 1, 2, [3]
+    fn(1, 2, 3, 4);    // 1, 2, [3, 4]
+    fn(1, 2, 3, 4, 5); // 1, 2, [3, 4, 5]
+
+```
+
+***
+
+
+<a href="#back0128">voltar a pergunta</a><br/>
+<a name="0128">0128</a> - **Resposta:** _Sim_
+
+ex:
+
+```php
+
+    function foo(&...$args) {
+        // each argument is passed by reference
+    }
+
+```
+
+***
+
+
+<a href="#back0129">voltar a pergunta</a><br/>
+<a name="0129">0129</a> - **Resposta:** _Sim_
+
+ex:
+
+```php
+
+    function foo(array ...$args) {
+        // each argument is an array
+    }
+
+```
+
+***
+
+
+<a href="#back0130">voltar a pergunta</a><br/>
+<a name="0130">0130</a> - **Resposta:** _`Operador de Splat` ou mais conhecido como `Unpacking` (desenpacotador), funciona ao
+contrário do que `variadics` faz, o que lhe permite descompactar uma estrutura de dados matriz como em uma lista de argumentos_
+
+ex:
+
+```php
+
+    var_dump(1, 2, ...[3, 4]); // int(1) int(2) int(3) int(4)
+
+```
+
+```php
+
+    function test($arg1, $arg2, $arg3 = null) {
+        var_dump($arg1, $arg2, $arg3);
+    }
+
+    test(...[1, 2]);       // 1, 2, NULL
+    test(...[1, 2, 3]);    // 1, 2, 3
+    test(...[1, 2, 3, 4]); // 1, 2, 3
+
+```
+
+***
+
+
+<a href="#back0131">voltar a pergunta</a><br/>
+<a name="0131">0131</a> - **Resposta:** _Será gerado um `Warning`, pois quando for tentar descompactar algo que não for uma matriz
+ou `Traversable` um aviso será lançado_
+
+***
+
+
+
+
+
+
+
+
+
+
+
+

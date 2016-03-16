@@ -554,8 +554,8 @@ Respostas
 
 
 <a href="#back068">voltar a pergunta</a><br/>
-<a name="068">068</a> - **Resposta:** _pré-incremento o PHP incrementa a variável antes de ler seu valor,
-pós-incremento o PHP incrementa a variável depois de ler seu valor_
+<a name="068">068</a> - **Resposta:** _Pré-incremento o PHP Incrementa $a em um, e então retorna $a.
+Pós-incremento o PHP Retorna $a, e então incrementa $a em um_
 
 ***
 
@@ -712,7 +712,7 @@ Operadores binários_
 
 <a href="#back073">voltar a pergunta</a><br/>
 <a name="073">073</a> - **Resposta:** _O operador de divisão ("/") sempre retorna um valor com ponto flutuante, a não ser que 
-os dois operandos seja inteiros (ou strings que são convertidas para inteiros) e números inteiramente divisíveis,
+os dois operandos sejam inteiros (ou strings que são convertidas para inteiros) e números inteiramente divisíveis,
 em outro caso um ponto flutuante é retornado_
 
 ***
@@ -810,7 +810,12 @@ i) **Resposta:** Maior ou igual<br/>
 
 
 <a href="#back081">voltar a pergunta</a><br/>
-<a name="081">081</a> - **Resposta:** _t_
+<a name="081">081</a> - **Resposta:** _`t`, Isto por causa da expressão ternária ser avaliada da esquerda para a direita,
+o seguinte é a versão mais óbvia do mesmo código demonstrado na pergunta_
+
+```php
+    echo ((true ? 'true' : 'false') ? 't' : 'f');
+```
 
 ***
 
@@ -833,7 +838,7 @@ arrays são incomparáveis, caso contrário – compara valor por valor_
 
 * 1 – converte null para “”, númerico ou  comparação léxica
 * 2 – converte para bool, FALSE < TRUE
-* 3 – Quando usado operador de comparação (==), variáveis objetos são comparadas de maneira simples , nominalmente, quando usado operador de identidade (===), variáveis objetos são identicas se e somente se elas se referem a mesma instância da mesma classe.
+* 3 – Quando usado operador de comparação (==), variáveis objetos são comparadas de maneira simples , nominalmente, quando usado operador de identidade (===), variáveis objetos são idênticas se e somente se elas se referem a mesma instância da mesma classe.
 * 4 – Transforma strings e resources para números
 * 5 - array com menos membros é menor, se a chave do operando 1 não é encontrada no operando 2, então os arrays são incomparáveis, caso contrário – compara valor por valor
 * 6 – é sempre maior

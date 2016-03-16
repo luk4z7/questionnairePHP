@@ -7,7 +7,7 @@ Estruturas de Controle
 Perguntas
 ---------
 
-<a name="back097">097</a> – Avalidando o trecho de código abaixo quando usamos (':') para definir uma condição if / elseif 
+<a name="back097">097</a> – Avaliando o trecho de código abaixo quando usamos (':') para definir uma condição if / elseif
 podemos separar (else if ) em duas palavras ?
 
 ```php
@@ -87,11 +87,11 @@ switch ($i) {
 ```php
 $i = 0;
 switch ($i) {
-    case 0:
+    case 0;
         echo "i equals 0";
-    case 1:
+    case 1;
         echo "i equals 1";
-    case 2:
+    case 2;
         echo "i equals 2";
 }
 ```

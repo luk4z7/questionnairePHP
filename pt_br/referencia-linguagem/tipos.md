@@ -43,19 +43,19 @@ Perguntas
 ***
 
 
-<a name="back013">013</a> – Quais tipos de valores podem ser considerados com FALSE ?
+<a name="back013">013</a> – Quais tipos de valores podem ser considerados como FALSE ?
 
 <a href="#013">Resposta</a>
 ***
 
 
-<a name="back014">014</a> – -1" é considerado FALSE, explique !?
+<a name="back014">014</a> – `-1` é considerado FALSE, explique !?
 
 <a href="#014">Resposta</a>
 ***
 
 
-<a name="back015">015</a> – Responda com o valor correto para a saída do var_dump:
+<a name="back015">015</a> – Responda com o valor correto para a saída do `var_dump`
 
 <a href="#015">Resposta</a>
 
@@ -94,13 +94,13 @@ h) var_dump((bool) "false");
 ***
 
 
-<a name="back016">016</a> – Defina alguns tipos de notação que os inteiros podem ser especificados ?
+<a name="back016">016</a> – Defina alguns tipos de notações onde os inteiros possam ser especificados ?
 
 <a href="#016">Resposta</a>
 ***
 
 
-<a name="back017">017</a> – Qual função pode converter o valor de um inteiro ?
+<a name="back017">017</a> – Qual função pode converter o valor de uma variável para um inteiro ?
 
 <a href="#017">Resposta</a>
 ***
@@ -155,14 +155,14 @@ de dados, quais funções relacionadas a esse tipo de feature são muito últeis
 ***
 
 
-<a name="back026">026</a> – Para escapar array multidimensionais dentro de strings literais especificadas com aspas 
+<a name="back026">026</a> – Para escapar array multidimensional dentro de strings literais especificadas com aspas
 duplas como é a maneira correta ? De um exemplo!
 
 <a href="#026">Resposta</a>
 ***
 
 
-<a name="back027">027</a> – Chamada de funções e métodos dentro de {$} está definido desde qual versão do PHP ?
+<a name="back027">027</a> – Chamada de funções e métodos dentro de `{$}` está definido desde qual versão do PHP ?
 
 <a href="#027">Resposta</a>
 ***
@@ -204,7 +204,7 @@ Qual seria o valor do próximo indíce !?
 ***
 
 
-<a name="back031">031</a> – Com o exemplo abaixo qual seria o valor do índice no final do script quando é executado o print_r !?
+<a name="back031">031</a> – Com o exemplo abaixo qual seria o valor do índice no final do script quando é executado o `print_r` !?
 
 ```php
 // Criando um array normal
@@ -227,7 +227,7 @@ print_r($array);
 
 
 <a name="back032">032</a> – Temos o seguinte exemplo a baixo, então podemos afirmar que esse trecho de código vai gerar um 
-E-NOTICE !?
+`E-NOTICE` !?
 
 ```php
 $arr = array('fruta' => 'maçã');
@@ -263,7 +263,7 @@ $array = array('cor' => 'vermelha',
 ***
 
 
-<a name="back035">035</a> – Nesse exemplo usamos o print_r() para ter o resultado do array abaixo, está correto? Exemplifique!
+<a name="back035">035</a> – Nesse exemplo usamos o `print_r()` para ter o resultado do array abaixo, está correto o retorno do array ? Exemplifique!
 
 ```php
 $array = array(10, 5 => 7, 3 => 6, 0 => 15);
@@ -282,7 +282,7 @@ resultado do print_r()
 ***
 
 
-<a name="back036">036</a> – Quando convertemos um valor em um objeto qual nome podemos usar no objeto para resgata-lo ?
+<a name="back036">036</a> – Quando convertemos um valor em um objeto qual nome podemos usar no objeto (membro) para resgata-lo ?
 
 ```php
 $obj = (object) 'String';
@@ -293,7 +293,7 @@ echo $obj-> ?
 ***
 
 
-<a name="back037">037</a> – A partir de qual versão o tipo resource foi incluído no PHP ?
+<a name="back037">037</a> – A partir de qual versão do PHP o tipo resource foi incluído no PHP ?
 
 <a href="#037">Resposta</a>
 ***
@@ -312,7 +312,7 @@ somente é responsabilidade do coletor de lixo? Explique um pouco.
 ***
 
 
-<a name="back040">040</a> – A partir que qual versão php tipo null foi introduzino no PHP ?
+<a name="back040">040</a> – A partir de qual versão do PHP o tipo `null` foi introduzino no PHP ?
 
 <a href="#040">Resposta</a>
 ***
@@ -324,7 +324,7 @@ somente é responsabilidade do coletor de lixo? Explique um pouco.
 ***
 
 
-<a name="back042">042</a> – Um exemplo de uma função que é denominada como pseudo-tipo mixed e um number!
+<a name="back042">042</a> – De um exemplo de uma função que é denominada como pseudo-tipo mixed e um number;
 
 <a href="#042">Resposta</a>
 ***
@@ -483,9 +483,10 @@ as funções relacionadas ao gmp_
 
 <a href="#back019">voltar a pergunta</a><br/>
 <a name="019">019</a> - **Resposta:** _porque não existe conversão para formato interno sem uma pequena perda de precisão, 
-isso pode ocasionar resultados confusos: por exemplo floor((01.+0.7)*10) normalmente retornará 7, em vez de 8, porque a 
-representação interna final será algo como  7.9999999999999991118...., então nunca confie em resultados com números de ponto 
-flutuante até a última casa e nunca compare números de ponto flutuante em igualdade_
+isso pode ocasionar resultados confusos: por exemplo `$x = (0.1 + 0.7) * 10;` `var_dump($x);` o valor retornado será `8`
+agora quando convertido, `echo (int)$x` normalmente retornará 7, em vez de 8, porque a representação interna final será
+algo como  7.9999999999999991118...., então nunca confie em resultados com números de ponto flutuante até a última casa e
+nunca compare números de ponto flutuante em igualdade_
 
 ***
 

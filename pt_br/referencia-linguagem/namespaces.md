@@ -102,8 +102,8 @@ namespaced (código global):
 ***
 
 
-<a name="back0207">0207</a> – Demonstre três formas de acessar uma classe "Nome não qualificado", "Nome qualificado", 
-"Nome completo":
+<a name="back0207">0207</a> – Demonstre três formas de acessar uma classe `Nome não qualificado`, `Nome qualificado`,
+`Nome completo`:
 
 <a href="#0207">Resposta</a>
 ***
@@ -202,13 +202,13 @@ echo constant('namespacename\constname'), "\n";
 ***
 
 
-<a name="back0209">0209</a> – Quais as duas maneiras abstratas de acessar elementos dentro de uma namespace ?
+<a name="back0209">0209</a> – Quais as duas maneiras abstratas de acessar elementos dentro de um namespace ?
 
 <a href="#0209">Resposta</a>
 ***
 
 
-<a name="back0210">0210</a> – Namespaces PHP suportam três tipos de aliasing ou importing, quais são eles ?
+<a name="back0210">0210</a> – Namespaces PHP suportam três tipos de `aliasing` ou `importing`, quais são eles ?
 
 <a href="#0210">Resposta</a>
 ***
@@ -249,7 +249,7 @@ echo constant('namespacename\constname'), "\n";
 
 <a name="back0212">0212</a> – FAQ: Coisas que você precisa saber sobre namespaces.
 
-> 1. Se eu não usar namespaces, eu deveria me importar com nada disso?
+> 1. Se eu não usar namespaces, eu deveria me importar com isso?
 >
 > 2. Como faço para usar classes internas ou globais em um namespace?
 >
@@ -323,10 +323,10 @@ Respostas
 
 <a href="#back0201">voltar a pergunta</a><br/>
 <a name="0201">0201</a> - **Resposta:** _`namespaces` são projetados para resolver dois problemas que os autores de bibliotecas 
-eaplicativos enfrentam na hora de criar elementos de código reutilizáveis, como classes e funções.
+e aplicativos enfrentam na hora de criar elementos de código reutilizáveis, como classes e funções.
  Colisões nos nomes das classes /funções/constantes internas ou de terceiros.
  Reduzir apelidos como (Extra_Long_Names), melhorando a legibilidade do código fonte.
- `namespaces fornecem uma maneira para agrupar relacionadas classes, interfaces, funções e constantes._
+ `namespaces` fornecem uma maneira para agrupar relacionadas classes, interfaces, funções e constantes._
 
 ***
 
@@ -352,13 +352,13 @@ var_dump($a, $b, $c);
 
 <a href="#back0203">voltar a pergunta</a><br/>
 <a name="0203">0203</a> - **Resposta:** _Sim, nenhum código PHP pode existir fora dos suportes de namespace, exceto por uma 
-instrução `declare(); então o código acima terá como retorno: 1_
+instrução `declare()` então o código acima terá como retorno: 1_
 
 ***
 
 
 <a href="#back0204">voltar a pergunta</a><br/>
-<a name="0204">0204</a> - **Resposta:** _Sim é possível declarar vários `namespaces em um único arquivo, essa sintaxe não é `
+<a name="0204">0204</a> - **Resposta:** _Sim, é possível declarar vários `namespaces` em um único arquivo, essa sintaxe não é
 recomendado para a combinação de `namespaces` em único arquivo_
 
 Retorno do código:
@@ -724,7 +724,7 @@ Retorno:
 
 
 <a href="#back0213">voltar a pergunta</a><br/>
-<a name="0213">0213</a> - **Resposta:** _Com o PHP 5.6 sim, podemos importar funções e namespaces, para importar funções é usado
+<a name="0213">0213</a> - **Resposta:** _Com o PHP 5.6 sim, podemos importar funções e constantes, para importar funções é usado
 `use function` e para constantes usa-se `use const`_
 
 ```php
